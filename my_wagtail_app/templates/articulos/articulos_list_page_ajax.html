@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% load wagtailimages_tags %}
+{% block content %}
+    
+    <div class="container mt-5">
+        {% for post in posts %}
+            {% image post.articulo_image fill-500x300 as img %}
+           <div class="row">
+                <h2>{{post.custom_title}}</h2>
+           </div>
+        {% endfor %}
+    </div>
+
+{% endblock content %}
