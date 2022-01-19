@@ -7,12 +7,10 @@ DEBUG = True
 SECRET_KEY = 'django-insecure-pqov6@@2a=4b@)40gnrzi3ot^u!mi70aiy04*v-4u!7$q0yqd7'
 
 # SECURITY WARNING: define the correct hosts in production!
-ALLOWED_HOSTS = ['*'] 
+ALLOWED_HOSTS = ['https://my-site-wagtail.herokuapp.com'] 
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
-
-INTERNAL_IPS = ("127.0.0.1","172.17.0.1")
 
 try:
     from .local import *
